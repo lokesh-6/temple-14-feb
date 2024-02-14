@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 2rem;
+}
+
+.left {
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+}
+
+.right {
+    display: inline;
+    width: 100%;
+    margin-top: 17px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+li {
+    text-align: center;
+    list-style: none;
+    margin: 0 3rem;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change background and text color on hover */
+.li:hover {
+  background-color: #ff252547; /* Change to your desired color */
+  color: #fff; /* Change to your desired color */
+  font-weight: bolder;
+  transform: scale(1.02);
+}
+
+/* Styles for active state */
+.li.active {
+  /* background-color: #FF2525;  */
+  color: #fff; /* Change to your desired color */
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width:1080px){
+    nav{
+        flex-direction: column;
+    }
+    .left{
+        margin: 5px 0 18px 0;
+    }
+    .right{
+        font-size: small;
+    }
+    .left>img{
+        display: inline-block;
+        height: 90px;
+        width: 117px;
+    }
+    nav{
+        height: 10rem;
+    }
+}
+@media screen and (max-width:880px){
+    .right ul .li li{
+        margin: 0 1.3vw;
+    }
+}
+@media screen and (max-width:530px){
+    .right ul .li li{
+        margin: 0 0.9vw;
+        font-size: small;
+    }
+}
+@media screen and (max-width:475px){
+    nav{
+        height: 32rem;
+        /* text-align: center; */
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right .li{
+
+        text-align: center;
+    }
+    .right ul{
+        display: inline;        
+    }
+}

@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 3px 10%;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(sky.jpg) no-repeat center center/cover;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    margin-bottom: 20px;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+}
